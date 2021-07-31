@@ -1,0 +1,405 @@
+/**
+* Use this to store classes that can or will be used
+* across the entire sample project
+*/
+/*--------------------- Flex -------------------*/
+.flex {
+  display: flex;
+}
+
+.flex-basis {
+  flex-basis: 50%;
+  flex-grow: 0;
+}
+
+.flex-25 {
+  flex: 25;
+}
+
+.flex-40 {
+  flex: 40;
+}
+
+.flex-60 {
+  flex: 60;
+}
+
+.flex-30 {
+  flex: 30;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.center-vertically {
+  display: flex;
+  align-items: center;
+}
+
+.bg-yellow {
+  background: #bbb425;
+}
+
+.bg-grey {
+  background: grey;
+}
+
+.bg-img {
+  background-image: url("/images/computer.jpeg");
+  background-size: cover;
+}
+
+.bg-img1 {
+  background-image: url("/images/chair.jpeg");
+  background-size: cover;
+}
+
+/*---------display-----------*/
+.d-block {
+  display: block;
+}
+
+/*-------------margin------------*/
+.m-0 {
+  margin: 0;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.mx-16 {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.my-16 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+/*--------------------- padding -------------------*/
+.p-0 {
+  padding: 0;
+}
+
+/*---- left & right */
+.px-8 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.px-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.px-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.px-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/*------ all -------- */
+.p-15 {
+  padding: 15px;
+}
+
+/*---- top & bottom ----*/
+.py-3 {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.py-10 {
+  padding-top: 16px;
+  padding-bottom: 10px;
+}
+
+.py-32 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/*-------- top --------*/
+.pt-16 {
+  padding-top: 16px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pt-22 {
+  padding-top: 22px;
+}
+
+/*-------- bottom --------*/
+.pb-8 {
+  padding-bottom: 8px;
+}
+
+.pb-16 {
+  padding-bottom: 16px;
+}
+
+/*-------- right --------*/
+.pr-30 {
+  padding-right: 30px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.pr-15 {
+  padding-right: 15px;
+}
+
+/*-------- left --------*/
+.pl-15 {
+  padding-left: 15px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pl-40 {
+  padding-left: 40px;
+}
+
+.pl-8 {
+  padding-left: 8px;
+}
+
+/*-------------- border bottom ---------*/
+/*-------------- side border---------*/
+.border-bottom {
+  border-bottom: thin gray ridge;
+}
+
+.border-top {
+  border-top: thin gray ridge;
+}
+
+.border-left {
+  border-left: thick solid;
+}
+
+.border-25 {
+  height: 25px;
+}
+
+.border-50 {
+  height: 50px;
+}
+
+.border-75 {
+  height: 75px;
+}
+
+.border-100 {
+  height: 100px;
+}
+
+.border-blue {
+  border-color: blue;
+}
+
+.border-red {
+  border-color: red;
+}
+
+.border-gray {
+  border-color: gray;
+}
+
+.border-yl {
+  border-color: yellow;
+}
+
+.border-yellow {
+  border: solid 5px;
+  border-color: #bbb425;
+}
+
+.border-radius {
+  border-radius: 100%;
+}
+
+/*----------button--------*/
+.w-40 {
+  width: 40%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-33 {
+  width: 33%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-60 {
+  height: 60px;
+}
+
+.h-450 {
+  height: 450px;
+}
+
+/*--------------------- typography -------------------*/
+.font-10 {
+  font-size: 10px;
+}
+
+.font-13 {
+  font-size: 13px;
+}
+
+.font-22 {
+  font-size: 22px;
+}
+
+.font-25 {
+  font-size: 25px;
+}
+
+.font-30 {
+  font-size: 30px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-yellow {
+  color: yellow;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.text:hover {
+  -webkit-text-decoration: underline black;
+          text-decoration: underline black;
+  color: white;
+}
+
+.text:active {
+  color: white;
+}
+
+.box:hover {
+  background: #bbb425;
+  border: solid 5px black;
+}
+
+@media screen and (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .text-xl {
+    font-size: 20px;
+  }
+
+  .text-xs {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .text-xl {
+    font-size: 32px;
+  }
+
+  .text-xs {
+    font-size: 11px;
+  }
+}

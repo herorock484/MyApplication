@@ -1,0 +1,339 @@
+/**
+* Use this to store classes that can or will be used
+* across the entire sample project
+*/
+
+/*--------------------- Flex -------------------*/
+.flex {
+    display: flex;
+}
+.flex-basis{
+    flex-basis: 50%;
+    flex-grow: 0;
+}
+
+@mixin flex-x($flex){
+    flex: $flex;
+}
+
+.flex-25{@include flex-x(25);}
+.flex-40{@include flex-x(40);}
+.flex-60{@include flex-x(60);}
+.flex-30{@include flex-x(30);}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+@mixin justify($justify){
+    justify-content: $justify;
+}
+
+.justify-end{@include justify(end);}
+.justify-center{@include justify(center);}
+
+.justify-end{
+    justify-content: end;
+}
+
+.justify-center{
+    justify-content: center;
+}
+.center-vertically {
+    display: flex;
+    align-items: center;
+}
+
+@mixin bg-x($background){
+    background: $background;
+}
+
+
+.bg-yellow{@include bg-x(#bbb425);}
+.bg-grey{@include bg-x(grey);}
+//.bg-img{@include bg-x('/images/cskenya.jpeg');}
+
+.bg-img{
+    background-image: url('/images/computer.jpeg');
+    background-size: cover;
+}
+.bg-img1{
+    background-image: url('/images/chair.jpeg');
+    background-size: cover;
+}
+
+/*---------display-----------*/
+.d-block{
+    display: block;
+}
+
+/*-------------margin------------*/
+@mixin margin-x($left, $right){
+    margin-left: $left;
+    margin-right: $right;
+}
+@mixin margin-y($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+@mixin margin-top($top){
+    margin-top: $top;
+}
+@mixin margin-bottom($bottom){
+    margin-bottom: $bottom;
+}
+@mixin margin-left($left){
+    margin-left: $left;
+}
+
+.m-0{
+    margin: 0;
+}
+.m-auto{
+    margin: auto;
+}
+
+.mx-16{@include margin-x(16px, 16px);}
+.my-16{@include margin-y(16px, 16px);}
+.mt-16{@include margin-top(16px);}
+.mb-16{@include margin-bottom(16px);}
+.ml-16{@include margin-left(16px);}
+
+/*--------------------- padding -------------------*/
+
+@mixin padding-x ($left, $right) {
+    padding-left: $left;
+    padding-right: $right;
+}
+@mixin padding-y ($top, $bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+@mixin padding ($padding) {
+    padding: $padding;
+}
+@mixin padding-top ($padding) {
+    padding-top: $padding;
+}
+@mixin padding-bottom ($padding) {
+    padding-bottom: $padding;
+}
+@mixin padding-right ($padding) {
+    padding-right: $padding;
+}
+
+@mixin padding-left ($padding) {
+    padding-left: $padding;
+}
+.p-0{
+    padding: 0;
+}
+
+/*---- left & right */
+.px-8 { @include padding-x(8px, 8px); }
+.px-10 { @include padding-x(10px, 10px); }
+.px-15 { @include padding-x(15px, 15px); }
+.px-40 { @include padding-x(40px, 40px); }
+
+
+/*------ all -------- */
+.p-15 { @include padding(15px); }
+
+
+/*---- top & bottom ----*/
+.py-3 { @include padding-y(3px, 3px); }
+.py-10 { @include padding-y(16px, 10px); }
+.py-32 { @include padding-y(32px, 32px); }
+
+
+/*-------- top --------*/
+.pt-16 { @include padding-top(16px); }
+.pt-10 { @include padding-top(10px); }
+.pt-22 { @include padding-top(22px); }
+
+/*-------- bottom --------*/
+.pb-8 { @include padding-bottom(8px); }
+.pb-16 { @include padding-bottom(16px); }
+
+
+
+/*-------- right --------*/
+.pr-30 { @include padding-right(30px); }
+.pr-10 { @include padding-right(10px); }
+.pr-15 { @include padding-right(15px); }
+
+/*-------- left --------*/
+.pl-15 { @include padding-left(15px); }
+.pl-20 { @include padding-left(20px); }
+.pl-40 { @include padding-left(40px); }
+.pl-8 { @include padding-left(8px); }
+
+
+/*-------------- border bottom ---------*/
+
+/*-------------- side border---------*/
+@mixin border-bottom($border-bottom){
+    border-bottom: $border-bottom;
+}
+@mixin border-top($border-top){
+    border-top: $border-top;
+}
+@mixin border-left($border-left){
+    border-left: $border-left;
+}
+@mixin border-x($border-height){
+    height: $border-height;
+}
+@mixin border-color($border-color){
+    border-color: $border-color;
+}
+@mixin border-radius($border-radius){
+    border-radius: $border-radius;
+}
+
+
+.border-bottom{ @include border-bottom(thin gray ridge);}
+.border-top{ @include border-top(thin gray ridge);}
+.border-left{ @include border-left(thick solid);}
+
+.border-25{ @include border-x(25px);}
+.border-50{ @include border-x(50px);}
+.border-75{ @include border-x(75px);}
+.border-100{ @include border-x(100px);}
+
+.border-blue{@include border-color(blue);}
+.border-red{@include border-color(red);}
+.border-gray{@include border-color(gray);}
+.border-yl{@include border-color(yellow);}
+.border-yellow{
+    border: solid 5px;
+    @include border-color(#bbb425);
+}
+
+.border-radius{@include border-radius(100%);}
+
+/*----------button--------*/
+
+@mixin w-x($width){
+    width: $width;
+}
+
+.w-40{@include w-x(40%);}
+.w-60{@include w-x(60%);}
+.w-33{@include w-x(33%);}
+.w-25{@include w-x(25%);}
+.w-100{@include w-x(100%);}
+
+@mixin h-x($height){
+    height: $height;
+}
+
+.h-60{@include h-x(60px)}
+.h-450{@include h-x(450px)}
+
+
+
+
+/*--------------------- typography -------------------*/
+@mixin font-x($font-size){
+    font-size: $font-size;
+}
+
+.font-10{@include font-x(10px);}
+.font-13{@include font-x(13px);}
+.font-22{@include font-x(22px);}
+.font-25{@include font-x(25px);}
+.font-30{@include font-x(30px);}
+
+.italic{
+    font-style: italic;
+}
+@mixin text-color($color){
+    color:$color ;
+}
+.text-blue{@include text-color(blue);}
+
+.text-center{
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-gray{
+    color: gray;
+}
+.text-white{
+    color: white;
+}
+
+.text-yellow{
+    color: yellow;
+}
+
+.absolute{
+    position: absolute;
+
+}
+
+.relative{
+    position: relative;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.text:hover{
+    text-decoration: underline black;
+    color: white;
+}
+.text:active{
+    color: white;
+}
+
+.box:hover{
+    background: #bbb425;
+    border: solid 5px black;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .flex{
+        flex-direction: column;
+    }
+
+    .text-xl {
+        font-size: 20px;
+    }
+
+    .text-xs {
+        font-size: 8px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .text-xl {
+        font-size: 32px;
+    }
+
+    .text-xs {
+        font-size: 11px;
+    }
+}
